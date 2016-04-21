@@ -1,12 +1,16 @@
-/client/verb/OOC(msg as text)
+/world/name = "Lobby"
 
+/proc/SendMessage(message)
+	for (var/client/C)
+		C << "[message]"
 
-	//log_ooc("[mob.name]/[key] : [raw_msg]") - Something from the /tg/ code that we might want later.
-	var/pkey = key
-	if (lentext(msg)>0)
-	{
-		world << "[pkey] : [msg]"
-	}
+/proc/Sanitize(text)
+	. = text
 
+	. = html_encode(.)
 
+/client/verb/Chat(var/msg as text)
+	set name = ">"
 
+	if (msg)
+		SendMessage("<b>[key]</b>: [Sanitize(msg)]")
