@@ -3,3 +3,6 @@
 /*.rsc
 /*.lk
 /config.xml
+/*.db
+/*.db-shm
+/*.db-wal
