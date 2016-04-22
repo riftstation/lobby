@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
+	<logger level="DEBUG" />
 	<database type="sqlite" file="lobby.db" />
 </configuration>
