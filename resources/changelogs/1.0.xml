@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changelog xmlns="http://files.byondhome.com/NullQuery/schemas/changelog.xsd">
+	<changeSet id="1" author="nullquery">
+		<sql>
+			CREATE TABLE messages
+			(
+				id bigint NOT NULL,
+				type character varying(10) NOT NULL,
+				author character varying(30) NOT NULL,
+				message text NOT NULL,
+				created timestamp without time zone NOT NULL,
+				CONSTRAINT messages_pkey PRIMARY KEY(id)
+			);
+		</sql>
+	</changeSet>
+</changelog>
