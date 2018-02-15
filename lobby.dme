@@ -8,6 +8,12 @@
 // BEGIN_PREFERENCES
 // END_PREFERENCES
 // BEGIN_INCLUDE
+#include <nullquery\dbchangelog\dbchangelog.dme>
+#include <nullquery\mysql4dm\mysql4dm.dme>
+#include <nullquery\nq_commons\nq_commons.dme>
+#include <nullquery\pgsql4dm\pgsql4dm.dme>
+#include <nullquery\sql4dm\sql4dm.dme>
+#include <nullquery\sqlite4dm\sqlite4dm.dme>
 #include "coding\lobby.dm"
 #include "resources\skins\lobby.dmf"
 // END_INCLUDE
